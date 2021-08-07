@@ -4,6 +4,7 @@
   "description": "SBot is a free song bot.",
   "main": "Main.js",
   "scripts": {
+    "start": "node Main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shan",
