@@ -333,11 +333,6 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
-
-
-# the private codes
-.config.js
-
 .env
 
 node_modules
