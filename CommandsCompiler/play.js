@@ -1,11 +1,6 @@
 const ytdl = require('ytdl-core-discord');
 var scrapeYt = require("scrape-yt");
-const discord = require('discord.js');
-const client = new discord.Client();
-/* Import Discord Buttons Client */
-const discordButtons = require("discord-buttons-plugin");
-const buttonClient = new discordButtons(client)
-
+const discord = require('discord.js')
 
 exports.run = async (client, message, args) => {
 
@@ -95,37 +90,7 @@ exports.run = async (client, message, args) => {
         queue.textChannel.send(noiceEmbed);
 
 
-
-        //update code on 8/8
-        client.on("message", (message) => {
-	if(message.content === "!button") {
-	/* Generate a Cute Embed :3 */
-	 const embed = new discord.MessageEmbed()
-	 .setTitle("Do you like me?")
-	 .setColor("GREEN");
- 
-    /* Generate 1st Button with "Yes" lable on it */
-	 const button1 = new buttonClient.MessageButton()
-	 .setLabel("Yes")
-	 .setStyle("green")
-	 .setID("yes")
-
-   /* Generate 2nd Button with "No" label on it */
-	 const button2 = new buttonClient.MessageButton()
-	 .setLabel("No")
-	 .setStyle("red")
-	 .setID("no")
-
-
-
-     
-     /* Send Message with button */
-     buttonClient.send(null, { channel: message.channel.id, embed, buttons: [ [button1, button2], [button3] ]})
- }
-})
-
-
-       
+        //update on 
     };
 
 
