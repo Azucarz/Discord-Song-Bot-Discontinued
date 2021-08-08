@@ -90,7 +90,20 @@ exports.run = async (client, message, args) => {
         queue.textChannel.send(noiceEmbed);
 
 
-        //update on 
+        //update on button 
+        /* Generate 1st Button with "Yes" lable on it */
+	 const button1 = new buttonClient.MessageButton()
+	 .setLabel("Yes")
+	 .setStyle("green")
+	 .setID("yes")
+
+   /* Generate 2nd Button with "No" label on it */
+	 const button2 = new buttonClient.MessageButton()
+	 .setLabel("No")
+	 .setStyle("red")
+	 .setID("no")
+
+       buttonClient.send(null, { channel: message.channel.id, embed, buttons: [ [button1, button2]]})
     };
 
 
