@@ -1,5 +1,5 @@
 const config = {
-    token: 'ODU0OTMzNzM0NTYxMDIxOTUy.YMrJFg.y_LGNp8rPU9dh-uOAbv1ITVR9gk',
+    token: 'token from discord get your own token',
     prefix: 'S! '
 }
 module.exports = config;
